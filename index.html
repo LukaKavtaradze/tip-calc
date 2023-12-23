@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="input.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <script src="script.js" defer></script>
+    <title>Document</title>
+  </head>
+
+  <body class="bg-[#C5E4E7] flex flex-col h-[100vh] items-center">
+    <div class="w-[86px] h[86px] flex items-center mt-[50px]">
+      <img src="./assets/logo.svg" alt="" />
+    </div>
+
+    <div
+      id="container"
+      class="bg-white flex flex-col items-center justify-center xl:w-[920px] xl:h-[481px] xl:rounded-[25px] xl:flex-row xl:gap-[20px] mt-[50px] rounded-t-[25px] pb-[20px]"
+    >
+      <div
+        id="son"
+        class="flex items-center justify-center gap-[20px] flex-col pt-[20px] m-[32px 32px] xl:justify-between xl:flex-row"
+      >
+        <div
+          id=""
+          class="flex flex-col  box-border xl:w-[379px] xl:h-[388px] justify-center mr-[32px] ml-[32px]"
+        >
+          <div class="flex justify-between items-start ">
+            <h2 class="text-[#5E7A7D] not-italic font-bold text-[16px]">
+              Bill
+            </h2>
+            <p id="zero" class="hidden">Cant be zero...</p>
+          </div>
+          <div class="relative">
+            
+              <input
+              id="bill-input"
+              class="w-[311px] md:w-[379px] cursor-pointer hover:border-[#26C2AE] h-[48px] xl:w-[379px] bg-[background: #F3F9FA;] border-2 border-color-[2px solid #26C2AE] bg-#F3F9FA rounded-md"
+              type="number"
+              name="number"
+              placeholder="0"
+               min="0"
+            />
+           
+            <img
+              id="dollar"
+              class="absolute top-[50%] translate-y-[-50%] left-[10px]"
+              src="/assets/icon-dollar.svg"
+              alt=""
+            />
+            </div>
+
+           
+        
+      
+          <div class="flex items-start flex-col gap-[10px]">
+            <div class="self-start">
+              <h2
+                class="text-[5E7A7D] mt-[10px] font-bold text-[16px] text-[#5E7A7D]"
+              >
+                Select Tip%
+              </h2>
+            </div>
+            <div
+              id="button-container"
+              class="grid grid-cols-2 md:grid-cols-3 gap-[15px] ml-[30px] md:ml-[0px]"
+            >
+              <button
+                id="tip"
+                class="bg-[#00474B] w-[120px] text-white text-[24px] p-4 rounded-md hover:bg-[#9FE8DF] hover:text-[#00474B] focus:outline-none"
+              >
+                5%
+              </button>
+              <button
+                id="tip"
+                class="bg-[#00474B] w-[120px] text-white text-[24px] p-4 rounded-md hover:bg-[#9FE8DF] hover:text-[#00474B]"
+              >
+                10%
+              </button>
+              <button
+                id="tip"
+                class="bg-[#00474B] w-[120px] text-white text-[24px] p-4 rounded-md hover:bg-[#9FE8DF] hover:text-[#00474B]"
+              >
+                15%
+              </button>
+              <button
+                id="tip"
+                class="bg-[#00474B] w-[120px] text-white text-[24px] p-4 rounded-md hover:bg-[#9FE8DF] hover:text-[#00474B]"
+              >
+                25%
+              </button>
+              <button
+                id="tip"
+                class="bg-[#00474B] w-[120px] text-white text-[24px] p-4 rounded-md hover:bg-[#9FE8DF] hover:text-[#00474B]"
+              >
+                50%
+              </button>
+              <input
+              type="text"
+                id="Custom"
+                class="bg-[#F3F9FA] w-[120px] text-[#547878] cursor-pointer border-[#26C2AE]   hover:border-[#26C2AE] p-4 text-[24px] rounded-md hover:bg-[#F3F9FA] focus:outline-none focus:border-[#26C2AE]"
+               placeholder="Custom"
+                >
+              </input>
+            </div>
+          </div>
+
+          <div
+            class="flex justify-center flex-col gap-[10px] pt-[10px] items-start"
+          >
+          <div class="flex  flex-col xl:h-[50px]">
+            <h4 class="text-[#5E7A7D] flex-col  not-italic  font-bold text-[16px]">
+              Number Of people
+            </h4>
+            <span  id="zero1" class="hidden">Cant be zero...</span>  
+          </div>
+            <div class="relative">
+                <input
+                class="w-[311px] md:w-[379px]  cursor-pointer hover:border-[#26C2AE]  border-[#26C2AE]  h-[48px] outline-2 border-color-[#26C2AE] bg-[#F3F9FA] rounded-md"
+                id="numOfPeople"
+                type="number"
+                name="numOfpeople"
+                placeholder="0"
+                 min="0"
+              />
+              <img
+                id="person"
+                class="absolute top-[50%] translate-y-[-50%] left-[10px]"
+                src="/assets/icon-person.svg"
+                alt=""
+
+              />
+            </div>
+            
+          </div>
+        </div>
+
+        <div
+          class="bg-[#00474B] flex flex-col rounded-2xl gap-[10px] items-center pt-[32px] w-[327px] h-[257px] xl:w-[413px] xl:h-[417px]"
+        >
+          <div
+            class="flex flex-col gap-[20px] pt-[5px] justify-center"
+          >
+            <section class="flex justify-between ">
+              <span class="text-white text-[16px] font-bold"
+                >Tip Amount
+                <p class="text-[13px]  text-[#7f9d9f] font-bold">
+                  / person
+                </p></span
+              >
+              <p id="tip-amount" class="text-[30px]   text-[#26C2AE]">$0.00</p>
+            </section>
+            <section class="gap-[87px] flex justify-between">
+              <span class="text-white text-[16px] font-bold"
+                >Total
+                <p class="text-[13px] text-[#7f9d9f] font-bold">
+                  / person
+                </p></span
+              >
+              <p id="total" class="text-3xl  text-[#26C2AE]">$0.00</p>
+            </section>
+          </div>
+
+          <button id="reset"
+            class="w-[281px] hover:bg-[#9FE8DF] h-[48px] mt-[30px] bg-[#26C2AE] xl:mt-[150px] rounded-md"
+          >
+            <p class="text-[#00474B] text-center text-[20px] font-bold">
+              RESET
+            </p>
+          </button>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
