@@ -81,6 +81,11 @@ buttons.addEventListener("click",(e) => {
     console.log(total);;
     tipAmount.textContent= `$${tip.toFixed(2)}`;
     totalAmount.textContent = `$${total.toFixed(2)}`;
+
+    if(numOfPeople === 0) {
+      tipAmount.textContent= "$0.00";
+      totalAmount.textContent = "$0.00";
+    }
    }
 // Custom value event listener  when custom input receives number it should calculate bill 
 
