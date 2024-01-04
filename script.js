@@ -77,7 +77,7 @@ buttons.addEventListener("click",(e) => {
   function calcTip(){
     let tip = bill * (tipValue / 100) / numOfPeople;
     console.log(tip)
-    let total = tip + bill
+    let total = tip + bill / numOfPeople;
     console.log(total);;
     tipAmount.textContent= `$${tip.toFixed(2)}`;
     totalAmount.textContent = `$${total.toFixed(2)}`;
